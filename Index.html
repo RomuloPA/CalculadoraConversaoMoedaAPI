@@ -6,6 +6,42 @@
     <title>Calculadora para conversão de moedas com API</title>
 </head>
 <body>
-    
+    <style>
+        div {
+            display: block;
+        }
+    </style>
+
+    <div class="currency-selector">
+        <label for="currency-one">Selecione a moeda que deseja converter:</label>
+        <select name="currency-one" id="currency-one" required>
+            <option value="">Selecione</option>
+            <option value="BRL">Real</option>
+            <option value="USD">Dólar</option>
+        </select>
+        <br>
+
+        <label for="currency-two">Selecione a moeda que deseja saber o valor:</label>
+        <select name="currency-two" id="currency-two" required>
+            <option value="">Selecione</option>
+            <option value="BRL">Real</option>
+            <option value="USD">Dólar</option>
+        </select>
+        <br>
+
+        <label for="value">Digite o valor que deseja converter: </label>
+        <input type="text" name="value" id="value" size="20" required>
+        <br>
+
+        <button class="convert">Converter</button>
+        <br>
+
+        <span class="result">O valor da conversão é: </span>
+        <span id="conversion-result" class="conversion-result"></span>
+        <br>
+    </div>
+    <div>
+        <label for=""></label>
+    </div>
 </body>
 </html>
