@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styles.css" media="screen">
     <title>Calculadora para conversão de moedas com API</title>
 </head>
 <body>
-    <style>
-        div {
-            display: block;
-        }
-    </style>
+    <video autoplay loop muted>
+        <source src="money.mp4" type="video/mp4">
+    </video>
 
-    <div class="currency-selector">
-        <label for="currency-one">Selecione a moeda que deseja converter:</label>
+    <h1>Calculadora para conversão de moedas</h1>
+
+    <div class="calculator">
+        <label for="currency-one">CONVERTER:</label>
         <select name="currency-one" id="currency-one" required>
             <option value="">Selecione</option>
             <option value="BRL">Real</option>
@@ -23,7 +24,7 @@
         </select>
         <br>
 
-        <label for="currency-two">Selecione a moeda que deseja saber o valor:</label>
+        <label for="currency-two">PARA:</label>
         <select name="currency-two" id="currency-two" required>
             <option value="">Selecione</option>
             <option value="BRL">Real</option>
@@ -33,20 +34,18 @@
         </select>
         <br>
 
-        <label for="value">Digite o valor que deseja converter: </label>
+        <label for="value">Digite o valor: </label>
         <input type="text" name="value" id="value" size="20" required>
         <br>
 
         <button class="convert" onclick="result()">Converter</button>
         <br>
 
-        <span class="result">O valor da conversão é: </span>
+        <span class="results">O valor da conversão é: </span><br><br>
         <span id="conversion-result" class="conversion-result"></span>
         <br>
     </div>
-    <div>
-        <label for=""></label>
-    </div>
+
 
     <script src="Script.js"></script>
 </body>
